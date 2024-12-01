@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Начало</title>
+    <!-- Google Fonts (Roboto + Cyrillic support) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        header {
+            background-color: #00aaff;
+            color: white;
+            padding: 30px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-family: 'Roboto', sans-serif;
+            margin: 20px 0;
+            font-size: 43px;
+            font-weight: 900;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+            text-align: center;
+        }
+        header img {
+            width: 200px;
+            
+        }
+        nav {
+            margin: 20px 0;
+            font-size: 18px;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+        nav a {
+            text-decoration: none;
+            color: #00aaff;
+            margin: 0 20px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #0077cc;
+        }
+        .container {
+            width: 90%;
+            margin: 30px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            color: #00aaff;
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+        .section p {
+            font-size: 18px;
+            line-height: 1.8;
+            text-align: justify;
+            color: #555;
+        }
+        .section img {
+            width: 100%;
+            max-width: 1200px;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #00aaff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 16px;
+        }
+        .social-share a {
+            color: white;
+            margin: 0 10px;
+            font-size: 24px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .social-share a:hover {
+            color: #0077cc;
+        }
+        .cta-button {
+            background-color: #00aaff;
+            color: white;
+            padding: 12px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            text-align: center;
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #0077cc;
+        }
+        /* Style for the Calendar */
+        .calendar-section {
+            background-color: #e6f7ff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .calendar-section iframe {
+            width: 100%;
+            max-width: 800px;
+            border: none;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header style="position: relative; text-align: center;">
+        <!-- Background Image -->
+        <img src="pexels-ann-h-45017-1765033.jpg" alt="Header Background" style="width: 100%; height: 200px;">
+    
+        <!-- Overlay Content -->
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+            <!-- Logo on the Left -->
+            <div style="position: absolute; left: 20px; top: 50%; transform: translateY(-50%);">
+                <img src="logo.png" alt="Logo" style="width: 200px; height: auto;">
+            </div>
+            
+            <!-- Title and Slogan -->
+            <div style="color: white; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);">
+                <h1 style="font-family: 'Arial', sans-serif; font-size: 36px; margin: 10px 0;">SIS 5</h1>
+                <p style="font-family: 'Arial', sans-serif; font-size: 18px; margin: 0;">ОНЛАЙН ОБУЧЕНИЕ</p>
+            </div>
+        </div>
+    </header>
+    
+    
+    
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Начало</a>
+        <a href="course.html">Обучение</a>
+        <a href="register.html">Регистрация</a>
+        <a href="about.html">За нас</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+
+        <!-- Announcement Section -->
+        <div class="section">
+            <h2>Безплатни онлайн курсове</h2>
+            <img src="flayer.jpg" alt="Безплатен онлайн курс" />
+            <p><strong>Продължителност:</strong> 45 учебни часа по Базово ниво на цифрова компетентност.</p>
+            <p><strong>Какво ще научите?</strong></p>
+            <ul>
+                <li>Работа с MS Office: Word, Excel, PowerPoint</li>
+                <li>Основи на изкуствения интелект</li>
+                <li>Използване на съвременни портали и дигитални услуги в Република България:
+                    <ul>
+                        <li>НАП, НОИ, Агенция по вписванията</li>
+                        <li>Публични дигитални услуги</li>
+                        <li>Работа с имейл платформи: abv.bg, Gmail.com</li>
+                    </ul>
+                </li>
+            </ul>
+            <p><strong>Какво получавате?</strong></p>
+            <ul>
+                <li>Сертификат, признат от ЕС, удостоверяващ вашите дигитални умения</li>
+                <li>Парична стипендия от 2,50 лв на час за успешно завършилите курса (средно 10 лв на ден)</li>
+                <li>Удобството да учите изцяло онлайн от дома си</li>
+            </ul>
+            <p><strong>За кого е подходящо?</strong></p>
+            <ul>
+                <li>За всеки, който иска да развие и усъвършенства своите дигитални умения</li>
+                <li>За хора на възраст над 16 години</li>
+                <li>За безработни лица, които търсят възможност за професионално развитие и повишаване на квалификацията си</li>
+            </ul>
+            <p><strong>Курсът е напълно безплатен!</strong></p>
+            <p><strong>Обучението се провежда онлайн и е достъпно от всяка точка на страната!</strong></p>
+        
+            <p><strong>Обогатете уменията си и направете крачка напред към успеха!</strong></p>
+            <a href="register.html" class="cta-button">Запишете се сега</a>
+        </div>
+
+        <!-- Additional Image Section -->
+        <div class="section">
+            <h2>Нашите ученици в действие</h2>
+            <img src="pexels-hillaryfox-1595391.jpg" alt="Ученици в обучение" />
+            <p>Нашите курсове обхващат всички важни аспекти на дигиталните технологии и са изцяло онлайн, което прави обучението достъпно за всеки.</p>
+        </div>
+
+        <!-- Calendar Section -->
+        <div class="calendar-section">
+            <h2>📅 Календар на обученията</h2>
+            <iframe src="https://calendar.google.com/calendar/embed?src=your_calendar_link_here" frameborder="0" scrolling="no"></iframe>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Свържете се с нас: info@ourservices.com | +123 456 7890</p>
+        <div class="social-share">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=your_website_url" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/512px-Facebook_f_logo_%282019%29.svg.png" alt="Facebook Share" width="40">
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
